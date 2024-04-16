@@ -1,0 +1,93 @@
+.hero {
+  background-image: url("../../../../public/images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 20vh; /* Reduced from 30vh */
+  padding-top: 10%; /* Adjusted to reduce overall height effect */
+  padding-right: 50px;
+  color: #fff;
+}
+
+.hero #heading h3 {
+  color: #fff;
+}
+.hero #heading {  
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .margin {
+    height: 40vh;
+  }
+  .hero {
+    background-position: right;
+    padding-top: 50%;
+    height: 80vh;
+  }
+  .hero .row {
+    width: 100%;
+  }
+}
+
+.Loginbtn {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Default font size */
+    margin: 4px 2px;
+    cursor: pointer; /* Cursor changes to a hand icon on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease 0s; /* Smooth transition for hover effects */
+    width: 20vh;
+    height: 5vh;
+}
+
+.Loginbtn i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Add a darker green color on hover */
+.Loginbtn:hover {
+    background-color: #45a049;
+}
+.btn.custom-button-icon {
+  background-color: #4CAF50 !important; /* Green background */
+  border: none !important;
+  color: white !important; /* White text */
+  padding: 10px 20px !important; /* Some padding */
+  font-size: 16px !important; /* Default font size */
+  border-radius: 5px !important; /* Rounded corners */
+  transition: all 0.3s ease 0s !important; /* Smooth transition for hover effects */
+}
+
+.btn.custom-button-icon i {
+  margin-right: 10px !important; /* Space between icon and text */
+}
+
+/* Add a darker green color on hover */
+.btn.custom-button-icon:hover {
+  background-color: #45a049 !important;
+}
+
+.button-container {
+  position: absolute; /* Position the buttons absolutely within the hero */
+  bottom: 10px; /* Distance from the bottom of the hero section */
+  left: 10px; /* Distance from the left side of the hero section */
+}
+
+.button {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+

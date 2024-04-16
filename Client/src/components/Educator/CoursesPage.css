@@ -1,0 +1,246 @@
+/* Educator.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #1eb2a6;
+}
+
+.admin-dashboard {
+  padding: 20px;
+  padding-top:40%;
+  color: #1eb2a6;
+}
+
+.admin-dashboard h2 {
+  color: #1eb2a6;
+}
+
+.dashboard-btn {
+  background-color: #1eb2a6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #17a295;
+}
+
+.hero {
+  background-color: #1eb2a6;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Adjustments for sharp edges and theme consistency */
+.button, .input, .select {
+  border-radius: 0; /* Sharp edges */
+}
+
+.input, .select {
+  border: 2px solid #1eb2a6;
+  color: #1eb2a6;
+}
+
+.input:focus, .select:focus {
+  border-color: #17a295;
+  outline: none;
+}
+
+/* Add more custom styles as needed */
+/* CourseForm Styles within Educator.css */
+
+/* Base styling for form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+  max-width: 400px; /* Adjust based on preference */
+  margin: auto; /* Center the form */
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #1eb2a6; /* Theme color border */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow */
+}
+
+form h2 {
+  color: #1eb2a6; /* Theme color for form heading */
+  text-align: center; /* Center-align the heading */
+}
+
+/* Styling for inputs */
+form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #1eb2a6; /* Theme color border */
+  border-radius: 0; /* Sharp edges */
+  color: #1eb2a6; /* Theme color text */
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #17a295; /* Slightly darker shade for focus */
+}
+
+/* Styling for submit button */
+form input[type="submit"] {
+  padding: 10px;
+  background-color: #1eb2a6; /* Theme color background */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 0; /* Sharp edges */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #17a295; /* Slightly darker shade on hover */
+}
+
+form input[type="submit"]:disabled {
+  background-color: #cccccc; /* Disabled button background */
+  cursor: not-allowed;
+}
+
+/* Courses Section Styling */
+.courses-section {
+  margin-top: 20px !important;
+}
+
+.course-item {
+  background-color: #f9f9f9 !important;
+  border-left: 5px solid #17a295 !important;
+  padding: 10px 15px !important;
+  margin-bottom: 10px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.course-item h3 {
+  margin: 0 !important;
+  color: #17a295 !important;
+  font-size: 1.2rem !important;
+}
+
+.course-item p {
+  margin: 5px 0 !important;
+  color: #666 !important;
+}
+
+.course-actions {
+  display: flex !important;
+  gap: 10px !important;
+}
+
+.course-actions button {
+  background-color: #17a295 !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 10px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.course-actions button:hover {
+  background-color: #149683 !important;
+}
+
+.course-actions button.edit-btn {
+  background-color: #ffa500 !important; /* Orange for edit */
+}
+
+.course-actions button.edit-btn:hover {
+  background-color: #cc8400 !important;
+}
+
+.course-actions button.delete-btn {
+  background-color: #ff4500 !important; /* Red for delete */
+}
+
+.course-actions button.delete-btn:hover {
+  background-color: #cc3700 !important;
+}
+
+.courses-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.courses-table th,
+.courses-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.courses-table th {
+  background-color: #f4f4f4;
+}
+
+.courses-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.courses-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.course-action-buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.course-action-buttons .edit-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.course-action-buttons .delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.course-title {
+  font-weight: bold;
+}
+
+.course-description {
+  color: #666;
+}
+
+/* You might want to add additional styling here for the Add Course form to make it stand out more */
+/* Add this to set the layout of the form to be above the table */
+.course-form-container {
+  margin-bottom: 30px;
+}
+/* Update the .courses-container for better spacing */
+.courses-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Continue with the rest of your CSS rules as before */

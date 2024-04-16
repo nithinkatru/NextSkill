@@ -1,0 +1,184 @@
+/* StudentDashboard.css */
+
+/* Base styles */
+
+  
+  /* This will target the ExploreCourses component directly after the hero section
+   and remove any top margin or padding that might be causing white space. */
+   .hero + .explore-courses-layout {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  /* If the hero section is not a direct sibling but still the previous element,
+   you can use general sibling combinator (~) */
+  .hero ~ .explore-courses-layout {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  /* Additional CSS resets for any elements within the ExploreCourses component that
+   might be contributing to unwanted space. */
+  .explore-courses-layout,
+  .explore-courses-layout * {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  /* Continue with the rest of your CSS as normal */
+  /* ... */
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin:none !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Hero section */
+.hero {
+  background-color: #007bff;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 0 0 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Notice board */
+.notice-board {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.notice-board h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.notice-board ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notice-board li {
+  margin-bottom: 10px;
+}
+
+.notice-board a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.notice-board a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #1eb2a6;
+  color: #fff;
+  padding: 14px; /* Adjusted from 20px to approximately 30% less for top and bottom */
+  margin-bottom: 20px;
+  padding-top: 20em;
+}
+
+.grades-container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.grades-container h2 {
+  color: #4CAF50;
+}
+
+.error {
+  color: #D32F2F;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.grades-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grades-container li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.grades-container li strong {
+  color: #333;
+}
+
+

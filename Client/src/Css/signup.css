@@ -1,0 +1,167 @@
+/* Signup.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ensures the background image covers the entire page */
+body {
+  /* background-image: url("../../public/images/bg.webp"); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+/* Styling for the signup container to ensure readability over the background */
+.signup-container {
+  max-width: 500px; /* Adjust max-width as needed */
+  margin: auto; /* Center the container horizontally */
+  margin-top:70vh;
+  padding: 20px;
+  border-radius: 0px;
+  animation: slideIn 0.5s ease; /* Reuse the slideIn animation */
+}
+
+/* Adjust hero section so it doesn't overlap content */
+.hero {
+  background-image: url("../../public/images/bg.webp") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  /* Remove position absolute and top/left/z-index properties */
+  width: 100% !important;
+  height: 100vh !important; /* Adjust as needed */
+  padding-top: 20% !important;
+  padding-right: 50px !important;
+  color: #fff !important;
+}
+
+/* Ensure signup form is positioned correctly */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vh !important;
+}
+
+/* Adjust card body to not overlap the hero section */
+.card-body {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 25em !important;
+  
+}
+
+/* Adjusts the form's appearance */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container{
+  width: 40% !important;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%; /* Ensure input fields take full width */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure button takes full width */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Reuse the slideIn animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Adjust the background position and form padding for smaller screens */
+@media screen and (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+}
+
+
+/* Add a darker green color on hover */
+.btn.custom-button-icon:hover {
+  background-color: #45a049 !important;
+}
+
+.button-container {
+  position: absolute; /* Keeps the button container positioned within the hero section */
+  bottom: 50px; /* Increase the distance from the bottom to move the container up */
+  left: 50px; /* Increase the distance from the left to move the container right */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+
+
+.button {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+.white-btn {
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text for visibility */
+  border: 1px solid #ccc; /* Optional: adds a subtle border */
+}
+
+.white-btn:hover {
+  background-color: #f8f8f8; /* Light gray background on hover for effect */
+  color: #333;
+}

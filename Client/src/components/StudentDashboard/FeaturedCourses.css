@@ -1,0 +1,159 @@
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 0; /* Adjusted for sharp edges */
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    width: calc(33.333% - 1rem); /* For three cards in a row, adjust as needed */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.course-card p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.video-card {
+    margin-bottom: 20px;
+    border-radius: 0; /* Adjusted for sharp edges */
+}
+
+.course-card, .video-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for course and video cards */
+.course-card:hover, .video-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Grid layout for courses with three items per row */
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .courses-container {
+        grid-template-columns: 1fr; /* Adjust for a single column on smaller screens */
+    }
+
+    .course-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.sidebar {
+    flex-basis: 20%; /* Adjust this value based on desired sidebar width */
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1; /* Allows the main content to fill the rest of the space */
+    padding: 20px;
+}
+
+.sidebar .nav-link {
+    color: #20c997 !important; /* Force color */
+}
+
+.sidebar .nav-link.active {
+    background-color: #20c997 !important; /* Force background color for active */
+    color: #fff !important; /* Force text color for active */
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #ddd;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.course-title {
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;  /* Adjust font size as necessary */
+    background: rgba(253, 253, 253, 0.7); /* Visible by default */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.course-details {
+    display: none;
+    padding: 10px;
+}
+
+.course-card:hover .course-details {
+    display: block; /* Show details on hover */
+}
+
+.course-card:hover .course-info {
+    background: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,132 @@
+
+
+.TakeExam-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  padding-top: 0px;
+  border: 1px solid #1eb2a6;
+  border-radius: 0; /* Sharp edges */
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TakeExam-container h1, .TakeExam-container h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.TakeExam-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.TakeExam-container li {
+  background: #fff;
+  border: 1px solid #bdc3c7;
+  border-radius: 0; /* Sharp edges */
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TakeExam-container button {
+  padding: 10px 15px;
+  background-color: #1eb2a6;
+  border: none;
+  border-radius: 0; /* Sharp edges */
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.TakeExam-container button:hover {
+  background-color: #16a085;
+}
+
+.TakeExam-container .question-container {
+  background: #fff;
+  border: 1px solid #bdc3c7;
+  border-radius: 0; /* Sharp edges */
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.TakeExam-container .question-container label {
+  display: block;
+  margin: 5px 0;
+}
+
+.TakeExam-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+.TakeExam-container .submit-answers {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 0; /* Sharp edges */
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.TakeExam-container .submit-answers:hover {
+  background-color: #2980b9;
+}
+
+.sidebar {
+  flex-basis: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Sharp edges */
+}
+
+.sidebar-btn {
+  background-color: #009688;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 0; /* Sharp edges */
+  cursor: pointer;
+}
+
+.sidebar-btn:hover {
+  background-color:  #009688;
+}
+.TakeExam-container button {
+  display: block; /* Ensure the button extends the full width of its container */
+  width: 90%; /* Slightly less than full width for padding effect */
+  height: 40px; /* Reduced height for a more refined look */
+  padding: 0 10px; /* Padding for spacing the text/icon inside */
+  background-color: #009688; /* A softer blue color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  color: white;
+  cursor: pointer;
+  outline: none;
+  text-align: center; /* Center-align the text */
+  margin: 10px auto; /* Center the button and add spacing around */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+.TakeExam-container button:hover {
+  background-color: #009688;/* A darker shade of the button color on hover */
+}
+
+/* Specific styles for the submit button to distinguish it */
+.TakeExam-container .submit-answers {
+  background-color: #009688; /* A pleasant green for submission buttons */
+}
+
+.TakeExam-container .submit-answers:hover {
+  background-color: #009688;/* A darker shade of green on hover */
+}

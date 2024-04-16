@@ -1,0 +1,76 @@
+.manage-quizzes-container {
+    background-color: #f9f9f9; /* Background color for the container */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    max-width: 600px; /* Adjust based on your preference */
+    margin: 20px auto; /* Centering the container */
+  }
+  
+  .manage-quizzes-container h2 {
+    color: #333; /* Heading color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .manage-quizzes-container input[type="text"],
+  .manage-quizzes-container button {
+    display: block;
+    width: calc(100% - 20px); /* Full width minus padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Border color */
+  }
+  
+  .manage-quizzes-container button {
+    background-color:#149683 !important;; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .manage-quizzes-container button:hover {
+    background-color: #149683; /* Darker green on hover */
+  }
+  
+  .manage-quizzes-container .option-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .manage-quizzes-container .option-container input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .manage-quizzes-container .option-container label {
+    margin-left: 10px;
+  }
+  
+  .manage-quizzes-container .question-container {
+    background-color: #e7e7e7; /* Light gray background for questions */
+    border: 1px solid #ccc; /* Border color for questions */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .manage-quizzes-container .question-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .manage-quizzes-container .remove-question-btn {
+    background-color: #f44336; /* Red background for remove button */
+    margin-top: 10px;
+  }
+  
+  .manage-quizzes-container .remove-question-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Add any other styles as needed */
+  

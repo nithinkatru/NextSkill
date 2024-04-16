@@ -1,0 +1,92 @@
+/* login.css */
+
+.hero {
+  background-image: url("../../public/images/bg.webp") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: -1 !important;
+  width: 100% !important;
+  height: 70vh !important;
+  padding-top: 20% !important;
+  padding-right: 50px !important;
+  color: #fff !important;
+}
+
+.hero #heading h3 {
+  color: #fff;
+}
+
+.hero #heading {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  background-color: #fff !important;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 60% !important;
+  margin-left: 20% !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top: 40%;
+
+}
+
+.login-form h2 {
+  font-size: 24px !important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px !important;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+}
+
+.alert-danger {
+  color: #721c24 !important;
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+  border-radius: 4px !important;
+}
+
+.btn-primary {
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+  background-color: #007bff !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+}
+
+.mt-2 {
+  margin-top: 10px !important;
+  text-align: center !important;
+}
+
+.mt-2 a {
+  color: #007bff !important;
+}

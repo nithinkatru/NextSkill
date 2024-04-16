@@ -1,0 +1,43 @@
+.content-container {
+    display: flex;
+    flex-direction: row;  /* Ensures horizontal layout */
+    justify-content: space-between; /* Maintains space between the two containers */
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.chart-container {
+    flex: 2 1 60%; /* Takes up 60% of the container */
+    padding: 20px; /* Uniform padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow for depth */
+    background-color: white; /* Background color for clarity */
+}
+
+.list-container {
+    flex: 1 1 40%; /* Takes up 40% of the container */
+    padding: 20px; /* Uniform padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow for depth */
+    background-color: white; /* Background color for clarity */
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stacks the containers on small screens */
+    }
+
+    .chart-container, .list-container {
+        flex: 1 1 100%; /* Each takes full width of the container */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stacks the containers */
+    }
+
+    .chart-container, .list-container {
+        flex: 1 1 100%; /* Each takes full width of the container */
+    }
+}

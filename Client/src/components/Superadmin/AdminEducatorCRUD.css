@@ -1,0 +1,81 @@
+.educator-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 20px !important;
+    background-color: #f4f4f4 !important; /* Light background for the table */
+  }
+  
+  .educator-table th,
+  .educator-table td {
+    text-align: left !important;
+    padding: 8px !important;
+    border-bottom: 1px solid #ddd !important; /* Adds a light line between rows */
+  }
+  
+  .educator-table th {
+    background-color: #1eb2a6 !important; /* Green background for headers */
+    color: white !important;
+  }
+  
+  .educator-table tr:hover {
+    background-color: #ddd !important; /* Adds a hover effect for rows */
+  }
+  
+  .educator-table button {
+    cursor: pointer !important;
+    border: none !important;
+    outline: none !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+    margin-right: 5px !important;
+    color: white !important;
+  }
+  
+  /* Specific button styles */
+  .educator-table .edit-btn {
+    background-color: #f39c12 !important; /* Orange for edit */
+  }
+  
+  .educator-table .delete-btn {
+    background-color: #e74c3c !important; /* Red for delete */
+  }
+  
+  /* Adjust button padding for mobile views */
+  @media (max-width: 768px) {
+    .educator-table button {
+      padding: 3px 6px !important;
+      font-size: 12px !important;
+    }
+  }
+  /* AdminEducatorCRUD.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #1eb2a6;
+    color: white;
+}
+
+button {
+    background-color: #1eb2a6; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
